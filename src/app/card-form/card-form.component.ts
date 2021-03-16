@@ -10,7 +10,7 @@ export class CardFormComponent implements OnInit {
   cardForm = new FormGroup({
     name: new FormControl('', [
       Validators.required, 
-      Validators.maxLength(3)
+      Validators.minLength(3)
     ])
   });
 
