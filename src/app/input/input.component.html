@@ -13,4 +13,7 @@
         {{ control.errors.maxlength.actualLength }} characters long but cannot be longer than {{
         control.errors.maxlength.requiredLength }} characters
     </div>
+    <div *ngIf="control.errors.pattern">
+        Invalid Format
+    </div>
 </ng-container>
