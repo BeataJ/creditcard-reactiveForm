@@ -1,4 +1,5 @@
 <div class="field">
+    <label class="label"></label>
     <input [formControl]="control" />
     <ng-container *ngIf="control.dirty && control.touched &&control.errors">
         <div *ngIf=" control.errors.required">
