@@ -3,6 +3,7 @@
     <app-input label="Card Name" [control]="cardForm.get('cardNumber')" ></app-input>
     <app-input label="Expiration" [control]="cardForm.get('expiration')" ></app-input>
     <app-input label="Security Code" [control]="cardForm.get('securityCode')" ></app-input>
+    <button type="submit">Submit</button>
 </form>
 
 <div>Form Contents: {{ cardForm.value | json }}</div>
