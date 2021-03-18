@@ -1,9 +1,12 @@
 <div class="field">
     <label class="label">{{ label }}</label>
     <div class="control">
-        <input [formControl]="control" />
+        <input 
+        [formControl]="control" 
+        [ngClass]="{'is-danger': showErrors()}"
+        />
     </div>
-    <ng-container *ngIf="control.dirty && control.touched &&control.errors">
+    <ng-container *ngIf="showErrors()">
         <div *ngIf=" control.errors.required">
             Value is required.
         </div>
